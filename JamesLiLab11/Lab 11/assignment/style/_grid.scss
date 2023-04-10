@@ -1,0 +1,46 @@
+@import '_styling';
+
+@media screen and (min-width: 800px) {
+  /*grid 1 col*/
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: $bgcolor;
+    padding: 10px;
+    margin: 50px;
+    grid-gap:10px;
+    border: 6px solid $bordercolor;
+  }
+}
+
+/*grid item format*/
+  .grid-item {
+    background-color: $griditemcolor;
+    
+  }
+  .smallsquare{
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .smallsquarealt{
+    grid-area:1;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .largersquare{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .longhor{
+    grid-column: 1 / span 2;
+  }
+  .longvert{
+    grid-row: 1 / span 3;
+  }
+/*font*/
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $parsize;
+  text-align: center;
+}
