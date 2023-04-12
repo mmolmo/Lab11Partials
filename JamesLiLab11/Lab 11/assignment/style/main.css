@@ -1,5 +1,14 @@
+/*imports stylesheet*/ /*grid items*/
+/*text*/
+/*font*/
+p {
+  font-family: Helvetica;
+  font-size: 23px;
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
-  /*grid 1 col*/
+  /*grid main*/
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,9 +49,5 @@
   grid-row: 1/span 3;
 }
 
-/*font*/
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 23px;
-  text-align: center;
-}/*# sourceMappingURL=main.css.map */
+/*grid items*/
+/*text*//*# sourceMappingURL=main.css.map */
